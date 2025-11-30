@@ -1,0 +1,193 @@
+:root {
+  --bg-main: #000000;
+  --bg-alt: #050505;
+  --bg-card: #101010;
+
+  --accent: #ffffff;       /* blanco para detalles */
+  --accent-soft: #b3b3b3;  /* gris claro */
+
+  --text-main: #ffffff;
+  --text-secondary: #b3b3b3;
+}
+
+/* General */
+body {
+  background: #000000;
+  color: var(--text-main);
+  font-family: 'Inter', sans-serif;
+}
+
+
+.text-accent {
+  color: var(--accent) !important;
+}
+
+.bg-black {
+  background-color: #000000 !important;
+}
+
+.section-title {
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  font-size: 0.95rem;
+}
+
+.section-title::before {
+  content: "";
+  display: inline-block;
+  width: 36px;
+  height: 2px;
+  background: linear-gradient(90deg, var(--accent), var(--accent-soft));
+  margin-right: 8px;
+  transform: translateY(-3px);
+}
+
+/* Hero */
+.hero-section {
+  background: radial-gradient(circle at top, #1a1a1a 0, #000000 55%);
+}
+
+.badge.text-bg-dark {
+  border-radius: 999px;
+}
+
+/* Cards */
+.card-dark {
+  background-color: var(--bg-card);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 1rem;
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.9);
+}
+
+/* Secciones alternadas */
+.section-alt {
+  background-color: var(--bg-alt);
+}
+
+.section-border-top {
+  border-top: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+/* Timeline experiencias */
+.timeline {
+  position: relative;
+  padding-left: 1.5rem;
+}
+
+.timeline::before {
+  content: "";
+  position: absolute;
+  left: 6px;
+  top: 0;
+  bottom: 0;
+  width: 1px;
+  background: linear-gradient(
+    to bottom,
+    var(--accent),
+    rgba(255, 255, 255, 0.2)
+  );
+}
+
+.timeline-item {
+  position: relative;
+  margin-bottom: 1.5rem;
+}
+
+.timeline-dot {
+  position: absolute;
+  left: -1px;
+  top: 4px;
+  width: 14px;
+  height: 14px;
+  border-radius: 999px;
+  border: 2px solid var(--accent-soft);
+  background-color: var(--bg-main);
+}
+
+.timeline-content {
+  margin-left: 1.5rem;
+}
+
+/* Sobre mí: foto principal */
+.about-photo {
+  width: 100%;
+  aspect-ratio: 4/5;
+  background-image: linear-gradient(
+      135deg,
+      rgba(255, 255, 255, 0.12),
+      rgba(0, 0, 0, 0.95)
+    ),
+    url("/img/tity-principal2.jpg");  /* <-- CAMBIA ESTE NOMBRE SI TU FOTO SE LLAMA DISTINTO */
+  background-size: cover;
+  background-position: center;
+  box-shadow: 0 25px 45px rgba(0, 0, 0, 1);
+  border-radius: 1.5rem;
+}
+
+/* Botón principal */
+.btn-accent {
+  background: #ffffff;
+  color: #000000;
+  border: none;
+  border-radius: 999px;
+  font-weight: 600;
+}
+
+.btn-accent:hover {
+  background: #dcdcdc;
+  color: #000000;
+}
+
+/* Carrusel */
+.carousel-caption {
+  display: none !important;
+}
+
+
+/* Footer */
+footer {
+  font-size: 0.8rem;
+}
+
+/* Ajustes de espaciado con navbar fija */
+main {
+  padding-top: 5rem;
+}
+#orquestas .carousel-inner img {
+  object-fit: cover;
+}
+
+#orquestas .carousel {
+  max-height: 420px;
+}
+
+#orquestas .carousel img {
+  max-height: 420px;
+}
+section {
+  scroll-margin-top: 80px;
+}
+.fade {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all .6s ease;
+}
+
+.fade.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+.social-link {
+  font-size: 1rem;
+}
+
+.social-link i {
+  transition: transform .2s ease, opacity .2s ease;
+}
+
+.social-link:hover i {
+  transform: translateY(-1px);
+  opacity: 0.8;
+}
+

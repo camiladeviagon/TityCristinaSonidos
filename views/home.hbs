@@ -1,0 +1,372 @@
+<!-- HERO / INICIO -->
+<section id="inicio" class="hero-section min-vh-100 d-flex align-items-center">
+  <div class="container">
+    <div class="row align-items-center g-5">
+      
+      <!-- Descripción principal -->
+      <div class="col-md-6">
+        <span class="badge text-bg-dark border border-accent mb-3">
+          Sonido en vivo · Mezcla de sala y monitores · Perspectiva disidente
+        </span>
+
+        <h1 class="display-5 fw-bold text-accent mb-3">
+          Tity Cristina Sonidos · Sonidista disidente
+        </h1>
+
+        <p class="lead text-secondary">
+          {{descripcion}}
+        </p>
+
+        <ul class="list-unstyled text-secondary small">
+          <li><i class="bi bi-soundwave me-2 text-accent"></i> Producción de sonido en vivo para bandas, solistas y proyectos con discurso propio.</li>
+          <li><i class="bi bi-people-fill me-2 text-accent"></i> Acompañamiento técnico en festivales feministas, de mujeres y disidencias.</li>
+          <li><i class="bi bi-headphones me-2 text-accent"></i> Mezclas de sala y monitores pensadas desde el cuidado y la presencia escénica.</li>
+        </ul>
+      </div>
+
+      <!-- CARRUSEL -->
+      <div class="col-md-6">
+        <div id="galeriaSonidista" class="carousel slide shadow-lg rounded-4 overflow-hidden">
+          <div class="carousel-inner">
+
+            <!-- Primera imagen — FOTO PRINCIPAL -->
+            <div class="carousel-item active">
+              <img src="/img/tity-principal.jpg" class="d-block w-100" alt="Tity haciendo sonido en vivo"/>
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Sonido en vivo</h5>
+                <p>Escenarios donde el sonido sostiene la presencia política y estética.</p>
+              </div>
+            </div>
+
+            <!-- Segunda imagen -->
+            <div class="carousel-item">
+              <img src="/img/slide1.png" class="d-block w-100" alt="Festival de mujeres y disidencias"/>
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Festivales feministas y disidentes</h5>
+                <p>Técnica al servicio de proyectos colectivos y memorias en resistencia.</p>
+              </div>
+            </div>
+
+            <!-- Tercera imagen -->
+            <div class="carousel-item">
+              <img src="/img/slide2.png" class="d-block w-100" alt="Monitores y sala"/>
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Monitores y sala</h5>
+                <p>Cuidado de quienes están sobre el escenario y de quienes escuchan.</p>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Controles -->
+          <button class="carousel-control-prev" type="button" data-bs-target="#galeriaSonidista" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Anterior</span>
+          </button>
+
+          <button class="carousel-control-next" type="button" data-bs-target="#galeriaSonidista" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Siguiente</span>
+          </button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- TRABAJOS DESTACADOS -->
+<section id="trabajos" class="py-5 section-border-top">
+  <div class="container">
+    <h2 class="section-title mb-4">Trabajos destacados</h2>
+
+    <div class="row g-4">
+      {{#each trabajosDestacados}}
+        <div class="col-md-4">
+          <article class="card card-dark h-100">
+            <div class="card-body">
+              <h5 class="card-title text-accent">{{this.titulo}}</h5>
+              <p class="card-subtitle mb-2 text-secondary">
+                {{this.rol}} · {{this.anio}}
+              </p>
+              <p class="card-text small text-light">
+                {{this.descripcion}}
+              </p>
+            </div>
+          </article>
+        </div>
+      {{/each}}
+    </div>
+
+  </div>
+</section>
+
+<!-- PROYECTOS -->
+<section id="proyectos" class="py-5 section-alt">
+  <div class="container">
+    <h2 class="section-title mb-4">Proyectos</h2>
+
+    <div class="row g-4">
+
+      <!-- Proyecto 1 -->
+      <div class="col-md-6">
+        <article class="card card-dark h-100">
+          <div class="card-body">
+            <h5 class="card-title text-accent">Femfest Mujeres y Disidencias – 20 años</h5>
+            <p class="text-secondary small mb-2">Producción técnica y archivo · 2024</p>
+            <p class="card-text small">
+              Participación en la producción técnica del festival y en la recopilación del Archivo Femfest 2024,
+              resguardando la memoria sonora de dos décadas de trabajo feminista y disidente en la música.
+            </p>
+          </div>
+        </article>
+      </div>
+
+      <!-- Proyecto 2 -->
+      <div class="col-md-6">
+        <article class="card card-dark h-100">
+          <div class="card-body">
+            <h5 class="card-title text-accent">Escuela Femfest: “Sonidos Rebeldes”</h5>
+            <p class="text-secondary small mb-2">Formación y práctica de sonido · 2023 - 2024</p>
+            <p class="card-text small">
+              Acompañamiento técnico y pedagógico en la Escuela Femfest “Sonidos Rebeldes”, compartiendo herramientas de
+              sonido en vivo con mujeres y disidencias que se integran a la técnica desde la experiencia colectiva.
+            </p>
+          </div>
+        </article>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- EXPERIENCIAS -->
+<section id="experiencias" class="py-5">
+  <div class="container">
+    <h2 class="section-title mb-4">Experiencias</h2>
+
+    <ul class="timeline list-unstyled">
+
+      <!-- Listado completo -->
+      <li class="timeline-item">
+        <span class="timeline-dot"></span>
+        <div class="timeline-content">
+          <h5 class="mb-1">Araceli Cantora – Agencia LOVA</h5>
+          <p class="small text-secondary mb-1">Sonido en vivo</p>
+          <p class="small">Sonidista para presentaciones de Araceli Cantora, en articulación con Agencia LOVA.</p>
+        </div>
+      </li>
+
+      <li class="timeline-item">
+        <span class="timeline-dot"></span>
+        <div class="timeline-content">
+          <h5 class="mb-1">Diavol Strain – Gira Seattle y Portland (E.E.U.U.)</h5>
+          <p class="small text-secondary mb-1">2025 · Mezcla de sala y monitores</p>
+          <p class="small">Sonido en vivo para Diavol Strain en fechas en Seattle y Portland.</p>
+        </div>
+      </li>
+
+      <li class="timeline-item">
+        <span class="timeline-dot"></span>
+        <div class="timeline-content">
+          <h5 class="mb-1">Primera conmemoración de Cecilia La Incomparable – Ñuñoa</h5>
+          <p class="small text-secondary mb-1">2024 · Sonido en vivo</p>
+          <p class="small">Operación de sonido en conmemoración oficial dedicada a Cecilia La Incomparable.</p>
+        </div>
+      </li>
+
+      <li class="timeline-item">
+        <span class="timeline-dot"></span>
+        <div class="timeline-content">
+          <h5 class="mb-1">Producción Técnica Femfest Mujeres y Disidencias</h5>
+          <p class="small text-secondary mb-1">2024 · Producción técnica</p>
+          <p class="small">Coordinación técnica general del festival.</p>
+        </div>
+      </li>
+
+      <li class="timeline-item">
+        <span class="timeline-dot"></span>
+        <div class="timeline-content">
+          <h5 class="mb-1">Recopilación Archivo Femfest</h5>
+          <p class="small text-secondary mb-1">2024 · Archivo y memoria sonora</p>
+          <p class="small">Recopilación y organización del archivo sonoro del festival.</p>
+        </div>
+      </li>
+
+      <li class="timeline-item">
+        <span class="timeline-dot"></span>
+        <div class="timeline-content">
+          <h5 class="mb-1">Diavol Strain – Apertura a Placebo</h5>
+          <p class="small text-secondary mb-1">2024 · Sonido en vivo</p>
+          <p class="small">Sonidista en vivo, garantizando claridad y presencia escénica.</p>
+        </div>
+      </li>
+
+      <li class="timeline-item">
+        <span class="timeline-dot"></span>
+        <div class="timeline-content">
+          <h5 class="mb-1">Escuela Femfest: “Sonidos Rebeldes”</h5>
+          <p class="small text-secondary mb-1">2023 – 2024 · Formación</p>
+          <p class="small">Procesos formativos en sonido desde mirada política y colectiva.</p>
+        </div>
+      </li>
+
+      <li class="timeline-item">
+        <span class="timeline-dot"></span>
+        <div class="timeline-content">
+          <h5 class="mb-1">Sin Lencería – Apertura a Bikini Kill</h5>
+          <p class="small text-secondary mb-1">2024 · Sonido en vivo</p>
+          <p class="small">Sonidista para show de apertura a Bikini Kill.</p>
+        </div>
+      </li>
+
+      <li class="timeline-item">
+        <span class="timeline-dot"></span>
+        <div class="timeline-content">
+          <h5 class="mb-1">Horregias – Sonidista de mezcla</h5>
+          <p class="small text-secondary mb-1">2019 – 2023 · Mezcla en vivo</p>
+          <p class="small">Sonido crudo, frontal y honesto para la banda Horregias.</p>
+        </div>
+      </li>
+
+      <li class="timeline-item">
+        <span class="timeline-dot"></span>
+        <div class="timeline-content">
+          <h5 class="mb-1">Caupolicanazo Feminista</h5>
+          <p class="small text-secondary mb-1">Sonido en vivo</p>
+          <p class="small">Participación técnica en hito masivo de organización feminista.</p>
+        </div>
+      </li>
+
+    </ul>
+  </div>
+</section>
+<!-- CELISTA EN ORQUESTAS -->
+<section id="orquestas" class="py-5 section-alt">
+  <div class="container">
+    <h2 class="section-title mb-4">Celista en orquestas</h2>
+
+    <div class="row g-4 align-items-center">
+      <!-- Texto -->
+      <div class="col-md-5">
+        <p class="text-secondary">
+          Además del trabajo como sonidista, he desarrollado una trayectoria como celista en orquestas
+          y ensambles, habitando el escenario desde el cuerpo, la cuerda y la experiencia colectiva de la música.
+        </p>
+        <p class="text-secondary">
+          Esta experiencia interpreta el sonido desde adentro: afinación, dinámica, escucha y diálogo con otras
+          secciones. Todo ese bagaje se cruza luego con la técnica de sonido en vivo, aportando una sensibilidad
+          musical que sostiene mejor a quienes están sobre el escenario.
+        </p>
+      </div>
+
+      <!-- Carrusel de fotos de celista -->
+      <div class="col-md-7">
+        <div id="galeriaCelista" class="carousel slide shadow-lg rounded-4 overflow-hidden">
+          <div class="carousel-inner">
+
+            <div class="carousel-item active">
+              <img src="/img/cello1.jpg" class="d-block w-100" alt="Tity tocando cello en orquesta"/>
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Cellista en orquesta</h5>
+                <p>Experiencia de escenario desde la cuerda y la escucha colectiva.</p>
+              </div>
+            </div>
+
+            <div class="carousel-item">
+              <img src="/img/cello2.jpg" class="d-block w-100" alt="Detalle de cello y partitura"/>
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Ensayos y montajes</h5>
+                <p>Trabajo sostenido entre partitura, cuerpo y sonido compartido.</p>
+              </div>
+            </div>
+
+            <div class="carousel-item">
+              <img src="/img/cello3.jpg" class="d-block w-100" alt="Orquesta completa en escenario"/>
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Orquesta en vivo</h5>
+                <p>Escenarios donde la música sinfónica y popular se encuentran.</p>
+              </div>
+            </div>
+
+          </div>
+
+          <button class="carousel-control-prev" type="button" data-bs-target="#galeriaCelista" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Anterior</span>
+          </button>
+
+          <button class="carousel-control-next" type="button" data-bs-target="#galeriaCelista" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Siguiente</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SOBRE MÍ -->
+<section id="sobre-mi" class="py-5 section-alt">
+  <div class="container">
+    <div class="row g-4 align-items-center">
+      
+      <!-- FOTO PRINCIPAL -->
+      <div class="col-md-5">
+        <div class="about-photo rounded-4"></div>
+      </div>
+
+      <!-- TEXTO -->
+      <div class="col-md-7">
+        <h2 class="section-title mb-3">Sobre mí</h2>
+
+        <p class="text-secondary">
+          Soy Tity, sonidista disidente. Entiendo el sonido en vivo como un espacio de cuidado y de resistencia, donde la técnica no está separada de lo político ni de lo afectivo.
+        </p>
+
+        <p class="text-secondary">
+          Trabajo principalmente en mezclas de sala y monitores, acompañando procesos de bandas, solistas y festivales que se articulan desde el feminismo, las disidencias sexuales y la memoria. 
+          Mi foco está en escuchar lo que cada proyecto necesita y traducirlo en una experiencia sonora coherente, nítida y honesta.
+        </p>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACTO -->
+<section id="contacto" class="py-5">
+  <div class="container">
+    <h2 class="section-title mb-4">Contacto</h2>
+
+    {{#if enviado}}
+      <div class="alert alert-success small">
+        Gracias por tu mensaje. Tity revisará tu correo y responderá pronto.
+      </div>
+    {{/if}}
+
+    <form action="/contacto" method="POST" class="row g-3">
+
+      <div class="col-md-6">
+        <label for="nombre" class="form-label">Nombre</label>
+        <input type="text" class="form-control bg-dark border-secondary text-light" id="nombre" name="nombre" required />
+      </div>
+
+      <div class="col-md-6">
+        <label for="email" class="form-label">Correo electrónico</label>
+        <input type="email" class="form-control bg-dark border-secondary text-light" id="email" name="email" required />
+      </div>
+
+      <div class="col-12">
+        <label for="mensaje" class="form-label">Mensaje</label>
+        <textarea class="form-control bg-dark border-secondary text-light" id="mensaje" name="mensaje" rows="4" required></textarea>
+      </div>
+
+      <div class="col-12 text-end">
+        <button type="submit" class="btn btn-accent px-4">Enviar mensaje</button>
+      </div>
+
+    </form>
+
+  </div>
+</section>
